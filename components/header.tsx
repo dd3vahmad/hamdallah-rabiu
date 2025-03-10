@@ -23,6 +23,7 @@ const Header = () => {
         alt="Hamdallah's logo"
         width={60}
         height={logo.height}
+        priority
       />
       <nav className="mx-3">
         <ul className="flex list-none gap-4">
