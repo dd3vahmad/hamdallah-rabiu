@@ -10,9 +10,7 @@ const Glassmorphism: React.FC<GlassmorphismProps> = ({
   className = "",
 }) => {
   return (
-    <div
-      className={`backdrop-blur-lg bg-white/10 border border-white/10 rounded-lg shadow-lg p-6 ${className}`}
-    >
+    <div className={`backdrop-blur-sm bg-white/10 shadow-lg ${className}`}>
       {children}
     </div>
   );

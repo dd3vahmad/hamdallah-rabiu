@@ -2,6 +2,15 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
@@ -18,7 +27,7 @@ export function ThemeToggle() {
 
   return (
     <div className="flex items-center space-x-2">
-      <button
+      {/* <button
         onClick={() => setTheme("light")}
         className={`p-2 rounded-lg ${
           theme === "light" ? "bg-gray-200" : "hover:bg-gray-100"
@@ -45,7 +54,18 @@ export function ThemeToggle() {
         }`}
       >
         System
-      </button>
+      </button> */}
+
+      <Select>
+        <SelectTrigger className="w-[180px]">
+          <SelectValue placeholder="Theme" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="light">Light</SelectItem>
+          <SelectItem value="dark">Dark</SelectItem>
+          <SelectItem value="system">System</SelectItem>
+        </SelectContent>
+      </Select>
     </div>
   );
 }
