@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutCard, GlassShadow, MeCard } from "./ui/ui";
+import Animate from "./providers/animate";
 
 const About = () => {
   return (
@@ -13,8 +14,12 @@ const About = () => {
       </h2>
 
       <div className="flex-1 flex justify-center gap-10 my-auto px-20">
-        <MeCard />
-        <AboutCard />
+        <Animate animationType="slideInLeft">
+          <MeCard />
+        </Animate>
+        <Animate animationType="slideInRight">
+          <AboutCard />
+        </Animate>
       </div>
     </div>
   );
