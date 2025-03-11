@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "./card";
 import Image from "next/image";
-import { placeholder } from "@/assets";
+import { logo, placeholder } from "@/assets";
 
 interface GlassmorphismProps {
   children: ReactNode;
@@ -92,5 +92,17 @@ export const AboutCard = () => {
         </CardHeader>
       </Glassmorphism>
     </Card>
+  );
+};
+
+export const Logo = () => {
+  return (
+    <Image
+      src={logo.src}
+      alt="Hamdallah's logo"
+      width={60}
+      height={logo.height}
+      priority
+    />
   );
 };

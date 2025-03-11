@@ -2,7 +2,7 @@ import { logo } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Glassmorphism } from "./ui/ui";
+import { Glassmorphism, Logo } from "./ui/ui";
 
 const Header = () => {
   const links = [
@@ -15,15 +15,9 @@ const Header = () => {
   ];
 
   return (
-    <Glassmorphism className="flex justify-between w-full items-center border-b border-dashed border-primary">
+    <Glassmorphism className="flex justify-between w-full items-center border-b border-dashed border-primary fixed z-10">
       <header className="flex items-center md:w-[60vw] mx-auto justify-between p-6">
-        <Image
-          src={logo.src}
-          alt="Hamdallah's logo"
-          width={60}
-          height={logo.height}
-          priority
-        />
+        <Logo />
         <nav className="mx-3">
           <ul className="flex list-none gap-4">
             {links.map(({ href, label }) => (
