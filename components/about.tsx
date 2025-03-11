@@ -1,11 +1,14 @@
 import React from "react";
-import { AboutCard, Glassmorphism, GlassShadow, MeCard } from "./ui/ui";
+import { AboutCard, GlassShadow, MeCard } from "./ui/ui";
 
 const About = () => {
   return (
-    <div className="w-full md:w-[60vw] min-h-[50vh] mx-auto mb-15 relative flex flex-col">
+    <div
+      id="about"
+      className="w-full md:w-[60vw] min-h-[50vh] mx-auto mb-28 relative flex flex-col"
+    >
       <GlassShadow />
-      <h2 className="text-3xl font-semibold w-full text-center mb-5">
+      <h2 className="text-3xl font-semibold w-full text-center my-5">
         About Me
       </h2>
 

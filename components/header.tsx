@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <Glassmorphism className="flex justify-between w-full items-center border-b border-dashed border-primary">
-      <header className="flex items-center md:w-[60vw] mx-auto justify-between pt-10 pb-6">
+      <header className="flex items-center md:w-[60vw] mx-auto justify-between p-6">
         <Image
           src={logo.src}
           alt="Hamdallah's logo"

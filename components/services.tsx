@@ -5,7 +5,7 @@ import { GlassShadow } from "./ui/ui";
 
 const Services = () => {
   return (
-    <div className="w-full">
+    <div id="services" className="w-full">
       <h2 className="text-3xl font-semibold w-full text-center mb-5">
         My Services
       </h2>

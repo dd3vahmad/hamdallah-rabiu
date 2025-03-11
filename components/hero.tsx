@@ -2,12 +2,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div
+    <main
       id="#"
-      className="grid grid-columns-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
+      className="grid grid-cols-[2fr_1fr] min-h-[72vh] md:w-[60vw] mx-auto justify-items-center font-[family-name:var(--font-geist-sans)]"
     >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <p className="px-4 py-2 rounded-full font-semibold text-sm border-2 border-purple-700 -rotate-10">
+      <div className="flex flex-col gap-8 row-start-2 h-full sm:p-20 sm:items-start">
+        <p className="px-4 py-2 mb-3 rounded-full font-semibold text-sm border-2 border-purple-700 -rotate-10">
           Welcome!
         </p>
         <h3 className="text-3xl font-semibold">
@@ -24,8 +24,10 @@ const Hero = () => {
             Copywriter - Nice to meet you! 😊
           </span>
         </p>
-      </main>
-    </div>
+      </div>
+
+      <div className="flex flex-col gap-8 row-start-2 h-full sm:p-20 sm:items-start"></div>
+    </main>
   );
 };
 
