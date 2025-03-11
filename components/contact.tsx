@@ -78,7 +78,7 @@ const Contact = () => {
             expertise, I'd be delighted to discuss it.
           </p>
 
-          <div className="flex flex-col md:flex-row gap-5 w-full justify-center items-center mb-8">
+          <div className="flex flex-col md:flex-row gap-5 w-full justify-center items-center md:mb-8">
             <div className="flex flex-col items-center">
               <p className="text-base font-semibold">
                 Reach out directly or use the form below:
@@ -95,8 +95,8 @@ const Contact = () => {
         </Animate>
 
         <Animate animationType="slideUp">
-          <Card className="w-full max-w-2xl bg-white/5 backdrop-blur-sm">
-            <CardContent className="pt-6">
+          <Card className="w-full md:max-w-2xl bg-white/5 backdrop-blur-sm">
+            <CardContent className="md:pt-6">
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
