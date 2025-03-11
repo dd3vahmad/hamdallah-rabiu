@@ -117,3 +117,11 @@ export const MilkyWay = () => {
     />
   );
 };
+
+export const Copyright = () => {
+  return (
+    <p className="w-full text-center text-sm font-semibold text-gray-700 py-3">
+      &copy; Hamdallah A. Rabiu 2025
+    </p>
+  );
+};
