@@ -6,6 +6,7 @@ import copywriting from "./copywriting.png";
 import marketing from "./marketing.png";
 import mastermind from "./mastermind.png";
 import messaging from "./messaging.png";
+import placeholder from "./no-image-placeholder.jpg";
 
 const isDark = false;
 
@@ -20,4 +21,5 @@ export {
   marketing,
   mastermind,
   messaging,
+  placeholder,
 };
