@@ -13,7 +13,7 @@ const About = () => {
         About Me
       </h2>
 
-      <div className="flex-1 flex justify-center gap-10 my-auto px-20">
+      <div className="flex flex-col md:flex-row flex-1 justify-center items-center md:items-none gap-5 md:gap-10 my-auto md:px-20">
         <Animate animationType="slideInLeft">
           <MeCard />
         </Animate>
