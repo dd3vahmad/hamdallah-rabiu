@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hamdallah Rabiu | Direct-Response Copywriter",
+  title: "Hamdallah Rabiu | Direct-Response Marketing & Copywriting Expert",
   description: "A seasoned direct-response copywriter and marketer",
 };
 

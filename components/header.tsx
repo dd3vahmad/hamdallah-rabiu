@@ -1,12 +1,10 @@
-import { logo } from "@/assets";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Glassmorphism, Logo } from "./ui/ui";
 
 const Header = () => {
   const links = [
-    { href: "#", label: "Home" },
+    { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#testimonials", label: "Testimonials" },

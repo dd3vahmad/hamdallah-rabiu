@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full md:w-[60vw] min-h-[50vh] mx-auto mb-28 relative flex flex-col"
+      className="w-full md:w-[60vw] mx-auto mb-28 relative flex flex-col pt-30"
     >
       <GlassShadow />
       <h2 className="text-3xl font-semibold w-full text-center my-5">
