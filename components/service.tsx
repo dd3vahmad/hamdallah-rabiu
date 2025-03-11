@@ -16,16 +16,16 @@ interface IProps {
 const Service = ({ service }: IProps) => {
   return (
     <Card
-      className="w-[350px]"
+      className="w-[80vw] md:w-[350px]"
       style={{ padding: 0, overflow: "hidden", borderRadius: "10px" }}
     >
       <Glassmorphism className="h-full">
         <Image
           src={(service.banner || placeholder).src}
           alt={service.title}
-          objectFit="cover"
-          width={400}
-          height={600}
+          width={100} // NextJs forced me to do this...
+          height={100} // NextJs forced me to do this...
+          style={{ height: "200px", width: "100%", objectFit: "cover" }}
           className="mb-3"
         />
         <CardHeader style={{ paddingInline: "10px", marginBottom: "10px" }}>
