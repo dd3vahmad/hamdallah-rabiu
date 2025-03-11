@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -12,12 +11,9 @@ const Hero = () => {
           Welcome!
         </p>
         <h3 className="text-3xl font-semibold">
-          Oh no, you found me already?!
+          Oh, you found me? How lovely!
         </h3>
-        <h3 className="text-2xl font-semibold">
-          Well, I suppose it’s time for another introduction.
-        </h3>
-        <h4 className="text-2xl font-semibold">Alright, here we go.</h4>
+        <h3 className="text-2xl font-semibold">Let me introduce myself</h3>
         <h2 className="text-5xl font-bold">
           I am <span className="text-purple-800">Hamdallah Rabiu</span>
         </h2>
@@ -28,7 +24,6 @@ const Hero = () => {
             Copywriter - Nice to meet you! 😊
           </span>
         </p>
-        {/* <Image src={logo.src} alt="Hamdallah's logo" width={60} height={60} /> */}
       </main>
     </div>
   );
