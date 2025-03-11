@@ -11,12 +11,12 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full border-t border-dashed border-primary mt-30 py-10">
-      <div className="flex w-[60vw] mx-auto py-3 justify-center gap-30">
+      <div className="flex flex-col md:flex-row md:w-[60vw] mx-auto p-3 md:py-3 md:px-0 justify-center gap-8 md:gap-30">
         <div className="flex flex-col gap-2">
           <h3 className="mb-3 font-semibold text-primary text-lg">
             Quick Links
           </h3>
-          <div className="flex gap-10 text-sm">
+          <div className="flex flex-col md:flex-row gap-10 text-sm">
             <ul className="flex flex-col gap-5">
               <li className="cursor-pointer">
                 <Link href={"#home"}>Home</Link>
