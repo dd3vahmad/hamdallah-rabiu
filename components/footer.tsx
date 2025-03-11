@@ -1,4 +1,10 @@
-import { Mail } from "lucide-react";
+import {
+  Instagram,
+  Linkedin,
+  Mail,
+  MessageCircle,
+  Twitter,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -61,7 +67,19 @@ const Footer = () => {
               hamdallahrabiu@gmail.com
             </li>
             <li className="cursor-pointer flex items-center gap-2">
-              <Mail size={"20px"} className="text-primary" /> Chat on Whatsapp
+              <MessageCircle size={"20px"} className="text-primary" /> Chat on
+              Whatsapp
+            </li>
+            <li className="flex gap-4 items-center">
+              <Link href={"#"}>
+                <Linkedin className="text-primary cursor-pointer hover:opacity-70" />
+              </Link>
+              <Link href={"#"}>
+                <Twitter className="text-primary cursor-pointer hover:opacity-70" />
+              </Link>
+              <Link href={"#"}>
+                <Instagram className="text-primary cursor-pointer hover:opacity-70" />
+              </Link>
             </li>
           </ul>
         </div>
