@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "./card";
 import Image from "next/image";
-import { logo, placeholder } from "@/assets";
+import { logo, milkyway, placeholder } from "@/assets";
 
 interface GlassmorphismProps {
   children: ReactNode;
@@ -103,6 +103,17 @@ export const Logo = () => {
       width={60}
       height={logo.height}
       priority
+    />
+  );
+};
+
+export const MilkyWay = () => {
+  return (
+    <img
+      src={milkyway.src}
+      alt="Milkyway"
+      width={"100%"}
+      height={milkyway.height}
     />
   );
 };

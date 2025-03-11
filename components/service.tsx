@@ -17,7 +17,7 @@ interface IProps {
 const Service = ({ service }: IProps) => {
   return (
     <Card
-      className="w-[80vw] md:w-[350px]"
+      className="w-[80vw] md:w-[350px] cursor-pointer"
       style={{ padding: 0, overflow: "hidden", borderRadius: "10px" }}
     >
       <Glassmorphism className="h-full">
