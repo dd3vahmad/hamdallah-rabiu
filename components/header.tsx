@@ -1,8 +1,27 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
-import { Glassmorphism, Logo } from "./ui/ui";
+import React, { useState, useEffect } from "react";
+import { Logo } from "./ui/ui";
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
   const links = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
@@ -13,10 +32,14 @@ const Header = () => {
   ];
 
   return (
-    <Glassmorphism className="flex justify-between w-full items-center fixed z-10">
-      <header className="flex items-center md:w-[60vw] mx-auto justify-between p-6">
+    <div
+      className={`fixed z-10 w-full transition-all duration-300 ${
+        scrolled ? "bg-white/10 backdrop-blur-md shadow-md" : "bg-transparent"
+      }`}
+    >
+      <header className="flex items-center md:w-[60vw] mx-auto justify-between p-3 md:p-6">
         <Logo />
-        <nav className="mx-3">
+        <nav className="hidden md:block mx-3">
           <ul className="flex list-none gap-4">
             {links.map(({ href, label }) => (
               <li
@@ -29,7 +52,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-    </Glassmorphism>
+    </div>
   );
 };
 
