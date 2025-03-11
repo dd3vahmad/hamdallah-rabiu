@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <main
-      id="#"
+      id="#home"
       className="grid grid-cols-[2fr_1fr] min-h-[70vh] md:w-[60vw] mx-auto justify-items-center mt-25 font-[family-name:var(--font-geist-sans)]"
     >
       <div className="flex flex-col gap-8 row-start-2 h-full sm:p-20 sm:items-start">

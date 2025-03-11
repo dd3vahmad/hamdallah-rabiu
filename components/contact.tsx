@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -186,7 +186,11 @@ const Contact = () => {
                     )}
                   />
 
-                  <Button type="submit" className="w-full md:w-auto text-white">
+                  <Button
+                    type="submit"
+                    className="w-full md:w-auto cursor-pointer text-white"
+                  >
+                    <Send />
                     Send Message
                   </Button>
                 </form>

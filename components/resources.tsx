@@ -7,7 +7,7 @@ import Resource from "./resource";
 const Resources = () => {
   return (
     <Animate animationType="slideUp">
-      <div id="services" className="w-full pt-30">
+      <div id="resources" className="w-full pt-30">
         <h2 className="text-3xl font-semibold w-full text-center my-5">
           My <span className="text-primary">Resources</span>
         </h2>

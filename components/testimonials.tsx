@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Card,
@@ -7,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import {
   Carousel,
+  type CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -17,6 +20,23 @@ import Image from "next/image";
 import { placeholder } from "@/assets";
 
 const Testimonials = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   return (
     <div id="testimonials" className="w-full pt-30 relative">
       <h2 className="text-3xl font-semibold w-full text-center my-5 text-primary">
@@ -24,7 +44,14 @@ const Testimonials = () => {
       </h2>
       <GlassShadow />
       <div className="md:w-fit mx-auto font-[family-name:var(--font-geist-sans)]">
-        <Carousel className="w-full md:w-[50vw]">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          setApi={setApi}
+          className="w-full md:w-[50vw]"
+        >
           <CarouselContent className="-ml-1">
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem
@@ -72,6 +99,21 @@ const Testimonials = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+
+        <div className="flex justify-center items-center gap-2 mt-2">
+          {api?.scrollSnapList().map((_, i) => (
+            <span
+              key={i}
+              className={
+                current === i + 1
+                  ? "text-primary text-4xl"
+                  : "text-purple-800 opacity-40 text-4xl"
+              }
+            >
+              •
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
