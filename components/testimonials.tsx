@@ -43,7 +43,7 @@ const Testimonials = () => {
         Testimonials
       </h2>
       <GlassShadow />
-      <div className="md:w-fit mx-auto font-[family-name:var(--font-geist-sans)]">
+      <div className="md:w-fit w-[100vw] mx-auto font-[family-name:var(--font-geist-sans)]">
         <Carousel
           opts={{
             align: "start",
@@ -60,7 +60,7 @@ const Testimonials = () => {
               >
                 <div className="p-1">
                   <Card
-                    className="w-[80vw] md:w-[300px] h-fit"
+                    className="md:w-[300px] h-fit"
                     style={{
                       padding: 0,
                       overflow: "hidden",
