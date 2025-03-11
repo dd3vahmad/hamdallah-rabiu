@@ -72,7 +72,7 @@ const Contact = () => {
 
       <div className="flex flex-col gap-5 justify-center items-center">
         <Animate animationType="slideUp">
-          <p className="text-sm text-center max-w-lg">
+          <p className="text-sm text-center max-w-lg font-semibold mb-5">
             I'm currently available for freelance projects and professional
             collaborations. If you have a project that could benefit from my
             expertise, I'd be delighted to discuss it.
@@ -80,7 +80,7 @@ const Contact = () => {
 
           <div className="flex flex-col md:flex-row gap-5 w-full justify-center items-center mb-8">
             <div className="flex flex-col items-center">
-              <p className="text-base">
+              <p className="text-base font-semibold">
                 Reach out directly or use the form below:
               </p>
               <a

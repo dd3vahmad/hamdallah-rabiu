@@ -8,8 +8,8 @@ const Header = () => {
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#testimonials", label: "Testimonials" },
-    { href: "#free-resources", label: "Free Resources" },
-    { href: "#newsletter", label: "Newsletter" },
+    { href: "#resources", label: "Free Resources" },
+    { href: "#contact", label: "Contact Me" },
   ];
 
   return (
@@ -21,7 +21,7 @@ const Header = () => {
             {links.map(({ href, label }) => (
               <li
                 key={`${href}${label}`}
-                className="text-sm font-semibold hover:text-purple-800"
+                className="text-sm font-semibold hover:text-purple-800 transition-colors duration-300"
               >
                 <Link href={href}>{label}</Link>
               </li>
