@@ -6,6 +6,7 @@ import {
   mastermind,
   messaging,
 } from "@/assets";
+import { IResource } from "@/components/resource";
 import { IService } from "@/components/service";
 
 export const services: IService[] = [
@@ -44,5 +45,46 @@ export const services: IService[] = [
     // banner: mastermind,
     description:
       "Unlock persuasive writing secrets to drive business success. Master customer psychology and craft irresistible offers.",
+  },
+];
+
+export const resources: IResource[] = [
+  {
+    title: "Understanding Market Sophistication and Awareness Levels",
+    // banner: copywriting,
+    description:
+      "Your marketing campaign will keep falling if you don't know this powerful information. And no matter how powerful your marketing is, this must be the bedrock.",
+  },
+  {
+    title:
+      "The Power of Personalization: Tailoring Your Message (With Infographics)",
+    // banner: marketing,
+    description:
+      "A visually engaging guide explaining the impact of personalization in marketing and how to implement it effectively.",
+  },
+  {
+    title: "The Direct-Response Copywriting Checklist (Downloadable Checklist)",
+    // banner: branding,
+    description:
+      "A practical checklist for ensuring all essential elements are included in direct-response copy, from headline to call-to-action.",
+  },
+  {
+    title: "Crafting Irresistible Headlines: A Step-by-Step Approach",
+    // banner: consulting,
+    description:
+      "An easy-to-understand guide exploring key psychological triggers used in effective copywriting.",
+  },
+  {
+    title:
+      "Mastering Persuasion: Key Psychological Secrets That Fuel Consumer Action",
+    // banner: messaging,
+    description:
+      "An easy-to-understand guide exploring key psychological triggers used in effective copywriting.",
+  },
+  {
+    title: "Decoding Consumer Behavior: Insights for Marketers",
+    // banner: mastermind,
+    description:
+      "A detailed guide discussing the latest trends in consumer behavior and how to leverage them in marketing strategies.",
   },
 ];
