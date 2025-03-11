@@ -4,9 +4,9 @@ import Services from "@/components/services";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col gap-y-20">
       <Hero />
-      {/* <About /> */}
+      <About />
       <Services />
     </div>
   );
