@@ -1,5 +1,5 @@
 import React from "react";
-import Glassmorphism from "./glassmorphism";
+import { Glassmorphism } from "./ui/ui";
 import Image, { StaticImageData } from "next/image";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { placeholder } from "@/assets";
@@ -13,6 +13,7 @@ export interface IService {
 interface IProps {
   service: IService;
 }
+
 const Service = ({ service }: IProps) => {
   return (
     <Card
