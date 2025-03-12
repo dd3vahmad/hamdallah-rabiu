@@ -67,15 +67,16 @@ const Contact = () => {
     >
       <GlassShadow />
       <h2 className="text-3xl font-semibold w-full text-center my-5">
-        Let's <span className="text-primary">Collaborate</span>
+        Let's <span className="text-primary">Chat!</span>
       </h2>
 
       <div className="flex flex-col gap-5 justify-center items-center">
         <Animate animationType="slideUp">
-          <p className="text-sm text-center w-full px-4 md:px-0 md:max-w-lg font-light mb-5">
-            I'm currently available for freelance projects and professional
-            collaborations. If you have a project that could benefit from my
-            expertise, I'd be delighted to discuss it.
+          <p className="text-sm text-center w-full px-4 md:px-0 md:max-w-lg mb-5">
+            If you’re looking for a skilled copywriter & marketing expert to
+            help elevate your brand, I'd love to chat. Whether it's a project, a
+            potential partnership or any other ideas you have in mind, I'm happy
+            to discuss how we can work together to achieve your business goals.
           </p>
 
           <div className="flex flex-col md:flex-row gap-5 w-full justify-center items-center md:mb-8">
@@ -88,7 +89,7 @@ const Contact = () => {
                 className="flex items-center gap-2 text-primary text-lg font-semibold mt-2 hover:underline"
               >
                 <Mail size={20} className="text-primary" />{" "}
-                hamdallahrabiu@gmail.com
+                officialhamdallah01@gmail.com
               </a>
             </div>
           </div>

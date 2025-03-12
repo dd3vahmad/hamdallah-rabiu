@@ -7,7 +7,7 @@ import Animate from "./providers/animate";
 const Services = () => {
   return (
     <Animate animationType="slideUp">
-      <div id="services" className="w-full mt:20 md:pt-30">
+      <div id="services" className="w-full mt:20 pt-30">
         <h2 className="text-3xl font-semibold w-full text-center my-5">
           My <span className="text-primary">Services</span>
         </h2>

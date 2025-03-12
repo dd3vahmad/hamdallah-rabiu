@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { logo, milkyway, placeholder } from "@/assets";
+import { hamdallah, logo, milkyway, placeholder } from "@/assets";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 
@@ -56,7 +56,7 @@ export const MeCard = () => {
     >
       <Glassmorphism className="h-full">
         <Image
-          src={placeholder.src}
+          src={hamdallah.src || placeholder.src}
           alt={"Hamdallah Rabiu"}
           width={100} // NextJs forced me to do this...
           height={100} // NextJs forced me to do this...
@@ -66,9 +66,7 @@ export const MeCard = () => {
         <CardHeader style={{ paddingInline: "10px", marginBottom: "10px" }}>
           <CardTitle>Hamdallah A. Rabiu</CardTitle>
           <CardDescription>
-            <p className="font-light text-sm">
-              Direct-Response Marketer & Copywriter
-            </p>
+            <p className="text-sm">Direct-Response Marketing Consultant</p>
           </CardDescription>
         </CardHeader>
       </Glassmorphism>
@@ -79,7 +77,7 @@ export const MeCard = () => {
 export const AboutCard = () => {
   return (
     <Card
-      className="w-[80vw] md:w-[400px]"
+      className="w-[80vw] md:w-[700px]"
       style={{ padding: 0, overflow: "hidden", borderRadius: "10px" }}
     >
       <Glassmorphism className="h-full py-10">
@@ -88,23 +86,50 @@ export const AboutCard = () => {
             Who am I?
           </CardTitle>
           <CardContent style={{ paddingInline: "10px", marginTop: "20px" }}>
-            <p className="mb-3 font-semibold">
-              I am a Direct-Response Marketing and Copywriting expert, with a
-              knack for writing high-converting sales copy. I have a passion for
-              writing and I believe that words have the power to change the
-              world.
-            </p>
             <p className="mb-3">
-              I’m known for leveraging deep psychology and persuasive techniques
-              to help global brands sell their products and services
-              effectively.
+              I’m Hamdallah, and I help businesses attract more customers,
+              increase sales, and keep them coming back—all through the power of
+              strategic marketing and persuasive messaging.
             </p>
-            <p className="mb-3 font-light">
-              I am the{" "}
-              <span className="font-semibold">Princess Of Kukumbia</span> (An
-              imaginary nation where communication is through writing.)
+
+            <p className="mb-3">
+              Great products don’t sell themselves. If your offers aren’t
+              getting the attention (or sales) they deserve, it’s not about what
+              you’re selling but about how you’re selling it.
             </p>
-            <h2 className="font-semibold">I am HAMDALLAH A. RABIU.</h2>
+
+            <p className="mb-3">And that’s where I come in.</p>
+
+            <p className="mb-3">
+              As a Direct-Response Marketing Consultant, I help businesses craft
+              sales strategies, optimize their messaging, and create copy that
+              turns casual browsers into paying customers. From
+              conversion-driven landing pages to high-impact email campaigns and
+              ad funnels, I make sure every touch-point in your marketing works
+              together to drive revenue.
+            </p>
+
+            <p className="mb-3">
+              I don’t just write. I strategize, optimize, and scale. Whether you
+              need to refine your brand voice, or boost conversions, or map out
+              a high-converting sales funnel, I’ll help you turn more leads into
+              long-term customers.
+            </p>
+
+            <p className="mb-3">
+              Oh, and I’m also the Princess of Kukumbia — a (totally legit)
+              imaginary nation where writing is our superpower. But in the real
+              world, I use that same power to help brands like yours{" "}
+              <span className="font-semibold">
+                sell smarter, faster, and more effectively
+              </span>
+            </p>
+
+            <p className="mb-3">What are you waiting for?</p>
+
+            <h2 className="font-semibold">
+              Let’s build a marketing strategy that brings in results!.
+            </h2>
           </CardContent>
         </CardHeader>
       </Glassmorphism>

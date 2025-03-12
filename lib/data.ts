@@ -11,80 +11,72 @@ import { IService } from "@/components/service";
 
 export const services: IService[] = [
   {
-    title: "Copywriting",
-    // banner: copywriting,
+    title: "Direct-Response Copywriting",
+    banner: copywriting,
     description:
-      "Whether it's landing page copy, website copy, email campaigns, or ad copy, I'll help you communicate your value proposition in a way that turns readers into customers.",
+      "Words should do more than just sit on a page—they should sell. I write high-converting copy that grabs attention, builds trust, and drives action. Whether it’s a sales page, email sequence, ad copy, or website content, I’ll craft persuasive messaging that turns visitors into loyal customers.",
   },
   {
-    title: "Marketing",
-    // banner: marketing,
+    title: "Sales Funnel Strategy & Optimization",
+    banner: consulting,
     description:
-      "Boost your brand and grow your business with smart marketing that works. Strategies that'll grow your online presence and attract customers.",
+      "A great product won’t sell itself—you need a strategic funnel that guides customers from interest to purchase. I help businesses map, build, and optimize sales funnels that attract leads, nurture them, and increase conversions. If your funnel isn’t converting, let’s fix that.",
   },
   {
-    title: "Branding",
-    // banner: branding,
+    title: "Website & Landing Page Conversion Optimization",
     description:
-      "Your brand is more than just a logo. It's the story you tell, the experience you create, and the relationships you build. Let's create a brand that resonates with your audience.",
+      "Your website shouldn’t just look good—it should make you money. I audit and optimize your landing pages and website copy to ensure your message is clear, persuasive, and designed to convert. Small tweaks can lead to big results, and I’ll help you make the right ones.",
   },
   {
-    title: "Consulting",
-    // banner: consulting,
+    title: "Email Marketing & Customer Retention",
+    banner: messaging,
     description:
-      "Get expert advice on your marketing strategy, copywriting, and branding. I'll help you identify your goals, create a plan and guide you through the process.",
+      "Email isn’t dead—it’s one of the most profitable marketing channels when done right. I create email campaigns that engage, nurture, and sell, turning one-time buyers into repeat customers. From welcome sequences to re-engagement campaigns, I’ll help you keep your audience hooked.",
   },
   {
-    title: "Brand Messaging",
-    // banner: messaging,
+    title: "Brand Messaging & Positioning Consulting",
+    banner: branding,
     description:
-      "Your brand messaging is the foundation of your marketing. I'll help you craft a message that resonates with your audience and sets you apart from the competition.",
+      "Struggling to stand out? I help businesses craft a unique brand voice and messaging strategy that connects with the right audience. Whether you're launching a new brand or refining your positioning, I’ll help you develop messaging that resonates and sells.",
   },
   {
-    title: "The Copywriter's Mastermind",
-    // banner: mastermind,
+    title: "Social Media Ad Copy & Campaign Strategy",
+    banner: marketing,
     description:
-      "Unlock persuasive writing secrets to drive business success. Master customer psychology and craft irresistible offers.",
+      "Stop wasting ad spend on copy that doesn’t convert. I’ll help you create high-converting social media ads that grab attention, engage your audience, and drive sales. From ad copywriting to campaign strategy, I’ll ensure your ads are optimized for maximum ROI.",
+  },
+  {
+    title: "Lead Magnet & Content Strategy",
+    banner: mastermind,
+    description:
+      "Attract the right leads with compelling lead magnets that convert. Whether it’s a free guide, checklist, or ebook, I’ll help you create content that offers real value, builds trust, and nurtures prospects into customers. From strategy to execution, I’ll help you create a content funnel that works.",
   },
 ];
 
 export const resources: IResource[] = [
   {
-    title: "Understanding Market Sophistication and Awareness Levels",
-    // banner: copywriting,
+    title: "The Ultimate Email Sequence Blueprint",
     description:
-      "Your marketing campaign will keep falling if you don't know this powerful information. And no matter how powerful your marketing is, this must be the bedrock.",
+      "Struggling to turn subscribers into loyal customers? This step-by-step blueprint will show you how to craft email sequences that nurture leads, boost engagement, and increase sales. Get ready-to-use templates for welcome emails, abandoned cart sequences, and re-engagement campaigns.",
   },
   {
-    title:
-      "The Power of Personalization: Tailoring Your Message (With Infographics)",
-    // banner: marketing,
+    title: "Customer Avatar Worksheet",
     description:
-      "A visually engaging guide explaining the impact of personalization in marketing and how to implement it effectively.",
+      "Want to sell more without guessing what your customers want? This easy-to-use worksheet will help you define your ideal customer’s pain points, desires, and buying triggers—so your messaging speaks directly to them. Download it and start attracting the right audience today!",
   },
   {
-    title: "The Direct-Response Copywriting Checklist (Downloadable Checklist)",
-    // banner: branding,
+    title: "Social Media Ad Copy Cheat Sheet",
     description:
-      "A practical checklist for ensuring all essential elements are included in direct-response copy, from headline to call-to-action.",
+      "Stop wasting money on ads that don’t convert! This cheat sheet gives you proven ad copy formulas for Facebook, Instagram, and Google Ads—so you can write scroll-stopping ads that drive clicks and sales. Perfect for business owners who want results fast!",
   },
   {
-    title: "Crafting Irresistible Headlines: A Step-by-Step Approach",
-    // banner: consulting,
+    title: "Website Copy Audit Checklist",
     description:
-      "An easy-to-understand guide exploring key psychological triggers used in effective copywriting.",
+      "Is your website copy costing you sales? Use this quick self-audit checklist to uncover weak spots in your headlines, calls-to-action, and messaging—so you can fix them fast and boost conversions. A must-have for any business owner!",
   },
   {
-    title:
-      "Mastering Persuasion: Key Psychological Secrets That Fuel Consumer Action",
-    // banner: messaging,
+    title: "The Psychology of Persuasion in Copywriting (Mini eBook)",
     description:
-      "An easy-to-understand guide exploring key psychological triggers used in effective copywriting.",
-  },
-  {
-    title: "Decoding Consumer Behavior: Insights for Marketers",
-    // banner: mastermind,
-    description:
-      "A detailed guide discussing the latest trends in consumer behavior and how to leverage them in marketing strategies.",
+      "What makes people say *yes*? This mini eBook breaks down the science of persuasion and how you can use it to influence buying decisions. Learn the psychology behind powerful copywriting and apply it to your business today!",
   },
 ];

@@ -1,4 +1,5 @@
 import {
+  Facebook,
   Instagram,
   Linkedin,
   Mail,
@@ -50,7 +51,9 @@ const Footer = () => {
               <Link href={"policy"}>Policy</Link>
             </li>
             <li className="cursor-pointer">
-              <Link href={"complaint"}>Complaint Handling</Link>
+              <Link target="_blank" href={"https://wa.link/dlzmz3"}>
+                Complaint Handling
+              </Link>
             </li>
             <li className="cursor-pointer">
               <Link href={"terms"}>Terms and Conditions</Link>
@@ -64,21 +67,42 @@ const Footer = () => {
           <ul className="flex flex-col gap-5 text-sm">
             <li className="cursor-pointer flex items-center gap-2">
               <Mail size={"20px"} className="text-primary" />{" "}
-              hamdallahrabiu@gmail.com
+              <Link
+                target="_blank"
+                href={"mailto:officialhamdallah01@gmail.com"}
+              >
+                officialhamdallah01@gmail.com
+              </Link>
             </li>
             <li className="cursor-pointer flex items-center gap-2">
-              <MessageCircle size={"20px"} className="text-primary" /> Chat on
-              Whatsapp
+              <MessageCircle size={"20px"} className="text-primary" />
+              <Link target="_blank" href={"https://wa.link/dlzmz3"}>
+                Chat on Whatsapp
+              </Link>
             </li>
             <li className="flex gap-4 items-center">
-              <Link href={"#"}>
+              <Link
+                target="_blank"
+                href={"https://www.linkedin.com/in/rabiu-hamdallah-0a3b2823a"}
+              >
                 <Linkedin className="text-primary cursor-pointer hover:opacity-70" />
               </Link>
-              <Link href={"#"}>
+              <Link target="_blank" href={"https://www.x.com/RabiuHamdallah"}>
                 <Twitter className="text-primary cursor-pointer hover:opacity-70" />
               </Link>
-              <Link href={"#"}>
+              <Link
+                target="_blank"
+                href={"https://www.linkedin.com/in/rabiu-hamdallah-0a3b2823a"}
+              >
                 <Instagram className="text-primary cursor-pointer hover:opacity-70" />
+              </Link>
+              <Link
+                target="_blank"
+                href={
+                  "https://www.facebook.com.com/profile.php?id=100079752733427"
+                }
+              >
+                <Facebook className="text-primary cursor-pointer hover:opacity-70" />
               </Link>
             </li>
           </ul>
