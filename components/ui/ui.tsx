@@ -6,8 +6,25 @@ import {
   CardHeader,
   CardTitle,
 } from "./card";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import { logo, milkyway, placeholder } from "@/assets";
+import { Menu } from "lucide-react";
+import Link from "next/link";
 
 interface GlassmorphismProps {
   children: ReactNode;
@@ -125,3 +142,53 @@ export const Copyright = () => {
     </p>
   );
 };
+
+export function MobileMenu() {
+  return (
+    <div className="md:hidden">
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Menu size={"36px"} />
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="w-56">
+          <DropdownMenuLabel>About Hamdallah</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuGroup>
+            <DropdownMenuItem>
+              <Link className="w-full" href={"#about"}>
+                About Me
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link className="w-full" href={"#services"}>
+                Services
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link className="w-full" href={"#testimonials"}>
+                Testimonials
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link className="w-full" href={"#resources"}>
+                Free Resources
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuGroup>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem>
+            <Link className="w-full" href={"#contact"}>
+              Contact Me
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link className="w-full" href={"#support"}>
+              Support
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem disabled>Newsletter</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
+  );
+}

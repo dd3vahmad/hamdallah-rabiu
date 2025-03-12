@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { Logo } from "./ui/ui";
+import { Logo, MobileMenu } from "./ui/ui";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -53,6 +53,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
+        <MobileMenu />
       </header>
     </div>
   );
