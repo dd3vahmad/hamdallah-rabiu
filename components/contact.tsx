@@ -72,7 +72,7 @@ const Contact = () => {
 
       <div className="flex flex-col gap-5 justify-center items-center">
         <Animate animationType="slideUp">
-          <p className="text-sm text-center max-w-lg font-semibold mb-5">
+          <p className="text-sm text-center w-full px-4 md:px-0 md:max-w-lg font-light mb-5">
             I'm currently available for freelance projects and professional
             collaborations. If you have a project that could benefit from my
             expertise, I'd be delighted to discuss it.
