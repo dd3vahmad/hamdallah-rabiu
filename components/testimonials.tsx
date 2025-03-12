@@ -18,11 +18,15 @@ import {
 import { Glassmorphism, GlassShadow } from "./ui/ui";
 import Image from "next/image";
 import { placeholder } from "@/assets";
+import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
 
   React.useEffect(() => {
     if (!api) {
@@ -50,6 +54,9 @@ const Testimonials = () => {
             loop: true,
           }}
           setApi={setApi}
+          plugins={[plugin.current]}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
           className="w-full md:w-[50vw]"
         >
           <CarouselContent className="-ml-1">
