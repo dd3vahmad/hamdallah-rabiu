@@ -34,7 +34,9 @@ const Header = () => {
   return (
     <div
       className={`fixed z-10 w-full transition-all duration-300 ${
-        scrolled ? "bg-white/10 backdrop-blur-md shadow-md" : "bg-transparent"
+        scrolled
+          ? "bg-white/10 backdrop-blur-md shadow-md text-primary"
+          : "bg-transparent"
       }`}
     >
       <header className="flex items-center md:w-[60vw] mx-auto justify-between p-3 md:p-6">
@@ -44,7 +46,7 @@ const Header = () => {
             {links.map(({ href, label }) => (
               <li
                 key={`${href}${label}`}
-                className="text-sm font-semibold hover:text-purple-800 transition-colors duration-300"
+                className="text-sm font-semibold hover:opacity-70 transition-colors duration-300"
               >
                 <Link href={href}>{label}</Link>
               </li>
