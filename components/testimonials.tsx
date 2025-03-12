@@ -19,6 +19,7 @@ import { Glassmorphism, GlassShadow } from "./ui/ui";
 import Image from "next/image";
 import { noImg } from "@/assets";
 import Autoplay from "embla-carousel-autoplay";
+import { Quote } from "lucide-react";
 
 const Testimonials = () => {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -92,14 +93,19 @@ const Testimonials = () => {
                   >
                     <Glassmorphism className="h-full">
                       <div
-                        className="mb-3 bg-transparent"
+                        className="mb-3 bg-transparent px-2"
                         style={{
                           height: "300px",
                           width: "100%",
                           paddingBlock: "50px",
                         }}
                       >
-                        ""
+                        <Quote size={24} className="mt-4" />
+                        <p className="mt-3">
+                          A great product won’t sell itself—you need a strategic
+                          funnel that guides customers from interest to
+                          purchase.
+                        </p>
                       </div>
 
                       <CardHeader
