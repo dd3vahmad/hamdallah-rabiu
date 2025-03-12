@@ -22,11 +22,11 @@ export const services: IService[] = [
     description:
       "A great product won’t sell itself—you need a strategic funnel that guides customers from interest to purchase. I help businesses map, build, and optimize sales funnels that attract leads, nurture them, and increase conversions. If your funnel isn’t converting, let’s fix that.",
   },
-  {
-    title: "Website & Landing Page Conversion Optimization",
-    description:
-      "Your website shouldn’t just look good—it should make you money. I audit and optimize your landing pages and website copy to ensure your message is clear, persuasive, and designed to convert. Small tweaks can lead to big results, and I’ll help you make the right ones.",
-  },
+  // {
+  //   title: "Website & Landing Page Conversion Optimization",
+  //   description:
+  //     "Your website shouldn’t just look good—it should make you money. I audit and optimize your landing pages and website copy to ensure your message is clear, persuasive, and designed to convert. Small tweaks can lead to big results, and I’ll help you make the right ones.",
+  // },
   {
     title: "Email Marketing & Customer Retention",
     banner: messaging,

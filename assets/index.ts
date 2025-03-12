@@ -8,6 +8,7 @@ import mastermind from "./mastermind.png";
 import messaging from "./messaging.png";
 import milkyway from "./milky-way.png";
 import placeholder from "./no-image-placeholder.jpg";
+import noImg from "./no-img.png";
 import hamdallah from "./hamdallah.jpg";
 
 const isDark = false;
@@ -25,5 +26,6 @@ export {
   messaging,
   placeholder,
   milkyway,
+  noImg,
   hamdallah,
 };

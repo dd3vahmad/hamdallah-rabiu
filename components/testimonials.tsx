@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/carousel";
 import { Glassmorphism, GlassShadow } from "./ui/ui";
 import Image from "next/image";
-import { placeholder } from "@/assets";
+import { noImg } from "@/assets";
 import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
@@ -63,11 +63,27 @@ const Testimonials = () => {
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem
                 key={index}
+                style={{ position: "relative" }}
                 className="pl-1 md:basis-1/2 lg:basis-1/3"
               >
                 <div className="p-1">
+                  <Image
+                    src={noImg.src}
+                    alt={"Hamdallah Rabiu"}
+                    width={1} // NextJs forced me to do this...
+                    height={1} // NextJs forced me to do this...
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      borderRadius: "50%",
+                      left: "32%",
+                      zIndex: 2,
+                      objectFit: "cover",
+                      position: "absolute",
+                    }}
+                  />
                   <Card
-                    className="md:w-[300px] h-fit"
+                    className="md:w-[300px] h-fit bg-transparent mt-14"
                     style={{
                       padding: 0,
                       overflow: "hidden",
@@ -75,18 +91,17 @@ const Testimonials = () => {
                     }}
                   >
                     <Glassmorphism className="h-full">
-                      <Image
-                        src={placeholder.src}
-                        alt={"Hamdallah Rabiu"}
-                        width={100} // NextJs forced me to do this...
-                        height={100} // NextJs forced me to do this...
+                      <div
+                        className="mb-3 bg-transparent"
                         style={{
                           height: "300px",
                           width: "100%",
-                          objectFit: "cover",
+                          paddingBlock: "50px",
                         }}
-                        className="mb-3"
-                      />
+                      >
+                        ""
+                      </div>
+
                       <CardHeader
                         style={{ paddingInline: "10px", marginBottom: "10px" }}
                       >
