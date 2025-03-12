@@ -43,7 +43,7 @@ const Testimonials = () => {
         Testimonials
       </h2>
       <GlassShadow />
-      <div className="md:w-fit w-[100vw] mx-auto font-[family-name:var(--font-geist-sans)]">
+      <div className="md:w-fit w-[84vw] mx-auto font-[family-name:var(--font-geist-sans)]">
         <Carousel
           opts={{
             align: "start",
@@ -96,8 +96,8 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="hidden md:block" />
+          <CarouselNext className="hidden md:block" />
         </Carousel>
 
         <div className="flex justify-center items-center gap-2 mt-2">
