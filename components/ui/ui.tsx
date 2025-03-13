@@ -25,6 +25,7 @@ import { Button } from "@/components/ui/button";
 import { hamdallah, logo, milkyway, placeholder } from "@/assets";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import Animate from "../providers/animate";
 
 interface GlassmorphismProps {
   children: ReactNode;
@@ -162,9 +163,11 @@ export const MilkyWay = () => {
 
 export const Copyright = () => {
   return (
-    <p className="w-full text-center text-sm font-semibold text-gray-700 py-3">
-      &copy; Hamdallah A. Rabiu 2025
-    </p>
+    <Animate className="zoomIn">
+      <p className="w-full text-center text-sm font-semibold text-gray-700 py-3">
+        &copy; Hamdallah A. Rabiu 2025
+      </p>
+    </Animate>
   );
 };
 
