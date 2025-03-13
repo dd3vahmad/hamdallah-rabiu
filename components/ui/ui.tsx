@@ -12,16 +12,10 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { hamdallah, logo, milkyway, placeholder } from "@/assets";
 import { Menu } from "lucide-react";
 import Link from "next/link";
